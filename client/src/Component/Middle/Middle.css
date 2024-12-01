@@ -1,0 +1,79 @@
+.middle.section {
+    background-color: white; /* Full white background */
+    padding: 1.5rem 0; /* Reduced padding for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .secContainer.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit width for better appearance on larger screens */
+    padding: 0.5rem; /* Reduced padding */
+  }
+  
+  .statsWrapper {
+    background-color: rgba(102, 174, 247, 0.1); /* Transparent Dodger Blue background for the whole stats container */
+    padding: 1.5rem; /* Reduced padding around the content */
+       /* Rounded corners for the entire wrapper */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 900px; /* Optional max-width for the entire wrapper */
+    text-align: center; /* Center the text inside */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for the stats */
+    gap: 1rem; /* Reduced gap between grid items */
+    justify-items: center; /* Center grid items horizontally */
+  }
+  
+  .stat-item {
+    padding: 1rem; /* Reduced padding around the text */
+    border-radius: 18px; /* Rounded corners for individual stat items */
+    text-align: center; /* Center align text within each item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    display: flex; /* Use flexbox to arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 0.5rem; /* Reduced space between heading and paragraph */
+  }
+  
+  .stat-item h1 {
+    font-size: 1.8rem; /* Adjusted font size for better inline alignment */
+    color: #1E90FF; /* Dodger Blue color for numbers */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .stat-item p {
+    font-size: 0.9rem; /* Reduced font size for descriptions */
+    color: #333; /* Darker text for descriptions */
+    opacity: 0.8; /* Slight transparency for the text */
+    margin: 0; /* Remove default margin */
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+      gap: 1rem; /* Reduced gap for smaller screens */
+    }
+  
+    .statsWrapper {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .stat-item h1 {
+      font-size: 1.4rem; /* Adjust font size for smaller screens */
+    }
+  
+    .stat-item p {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

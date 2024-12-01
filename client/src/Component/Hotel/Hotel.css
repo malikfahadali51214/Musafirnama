@@ -1,0 +1,148 @@
+/* Container styling */
+.hotels-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 40px;
+    min-height: 80vh; /* Makes the component cover more vertical space */
+    max-width: 1400px; /* Sets a maximum width for the container */
+    width: 100%; /* Ensures the container takes full width */
+    margin: 0 auto; /* Centers the container horizontally */
+  }
+  
+  /* Heading styling */
+  .hotels-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(64, 62, 62, 0.2); /* Dark color for heading text */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Cards container styling */
+  .hotels-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    width: 100%; /* Full width of the container */
+  }
+  
+  /* Individual card styling */
+  .hotel-card {
+    background-color: white; /* White background for card */
+    width: 300px; /* Increased width for card */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Hides overflow, maintains rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Image styling */
+  .hotel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures image covers the area without stretching */
+    border-top-left-radius: 12px; /* Rounds top-left corner */
+    border-top-right-radius: 12px; /* Rounds top-right corner */
+    border: none; /* No border on top, right, and left */
+  }
+  
+  /* Card title styling */
+  .hotel-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    text-align: left; /* Align text to the left */
+    padding: 0 15px; /* Padding to ensure text doesn't touch the edges */
+    width: calc(100% - 30px); /* Adjust width to account for padding */
+  }
+  
+  /* Location styling */
+  .hotel-location {
+    display: flex;
+    align-items: center;
+    color: #777; /* Gray color for location text */
+    font-size: 1rem;
+    margin: 0 15px 10px; /* Adjust margin to align with text */
+    text-align: left; /* Align text to the left */
+    width: calc(100% - 30px); /* Adjust width to account for padding */
+  }
+  
+  /* Icon styling */
+  .location-icon {
+    margin-right: 5px; /* Space between icon and text */
+    color: #007bff; /* Blue color for location icon */
+  }
+  
+  /* Card footer styling */
+  .hotel-footer {
+    display: flex;
+    justify-content: space-between; /* Space between rating and price */
+    align-items: center;
+    width: 100%; /* Full width of the card */
+    padding: 10px 15px; /* Padding around the content */
+    background-color: #f8f8f8; /* Light gray background for footer */
+    border-bottom-left-radius: 12px; /* Rounds bottom-left corner */
+    border-bottom-right-radius: 12px; /* Rounds bottom-right corner */
+  }
+  
+  /* Rating styling */
+  .hotel-rating {
+    display: flex;
+    align-items: center;
+    color: #ffcc00; /* Gold color for rating stars */
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  /* Rating icon styling */
+  .rating-icon {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  /* Price button styling */
+  .price-button {
+    background-color: rgba(30, 144, 255, 0.8); /* Blue background for button */
+    color: white; /* White text for button */
+    border: none; /* Removes border */
+    padding: 5px 10px; /* Padding around button text */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-right: 23px;
+  }
+  
+  /* Price button hover effect */
+  .price-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Card hover effect */
+  .hotel-card:hover {
+    transform: translateY(-5px); /* Moves card up slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hotel-card {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .hotels-card-container {
+      flex-direction: column; /* Stacks cards vertically on smaller screens */
+      gap: 1rem; /* Reduces gap between cards for smaller screens */
+    }
+  
+    .hotels-heading {
+      font-size: 2rem; /* Smaller font size for heading on mobile */
+    }
+  }
+  

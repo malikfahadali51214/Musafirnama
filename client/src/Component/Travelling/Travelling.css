@@ -1,0 +1,51 @@
+.travelling-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh; /* Centers content vertically */
+  background-color: white; /* Light background color */
+  padding: 20px; /* Adds padding around the content */
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333; 
+  text-shadow: 2px 2px 4px rgba(64, 62, 62, 0.2);
+  text-align: center; /* Centers the heading text */
+ 
+}
+
+.icons-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows the icons to wrap if the screen is too small */
+  gap: 7rem; /* Space between icons */
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90px; /* Sets a max width for better alignment */
+  text-align: center; /* Centers the text under each icon */
+}
+
+.icons   {
+  font-size: 3rem;
+  color: #007bff; /* Blue color for icons */
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease; /* Smooth color transition for hover effect */
+}
+
+.icon:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.icon-item p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem; /* Space between icon and text */
+}

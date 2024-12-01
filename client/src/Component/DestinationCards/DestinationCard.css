@@ -1,0 +1,154 @@
+.main.container.section {
+    padding: 2rem 0; /* Padding around the main container */
+    background-color: #f8f9fa ; /* Light background for the section */
+  }
+  
+  .secTitle {
+    text-align: center;
+    margin-bottom: 2rem; /* Increased margin for better separation */
+    position: relative; /* Required for the pseudo-element */
+  }
+  
+  .title {
+    font-size: 3.0rem;
+    text-align: center;
+    color: #333; 
+    text-shadow: 2px 2px 4px rgba(64, 62, 62, 0.2); 
+    font-weight: bold; /* Make the title stand out */
+    display: inline-block; /* Allows the underline to be positioned correctly */
+    padding-bottom: 0.5rem;
+   
+  }
+  .secContent {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three columns with equal width */
+    gap: 1.5rem; /* Increased gap for a more spacious layout */
+  }
+  
+  .singleDestination {
+    background-color: #fff; /* Clean white background */
+    border-radius: 10px; /* Slightly more rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    overflow: hidden; /* Ensure content doesn't overflow the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    width: 100%; /* Make the card responsive */
+    max-width: 360px; /* Limit the maximum width */
+    border-bottom: 4px solid rgba(30, 144, 255, 0.8); /* Line under each destination card */
+  }
+  
+  .singleDestination:hover {
+    transform: translateY(-8px); /* More noticeable lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .imageDiv img {
+    width: 100%;
+    height: 180px; /* Adjusted image height for a more balanced card */
+    object-fit: cover; /* Ensure image covers the area without stretching */
+    display: block;
+    border-bottom: 2px solid #ddd; /* Thicker border for a modern look */
+  }
+  
+  .cardInfo {
+    padding: 1rem; /* Increased padding for a better layout */
+  }
+  
+  .destTitle {
+    font-size: 1.2rem; /* Larger font size for the destination title */
+    margin-bottom: 0.5rem; /* Increased margin for better separation */
+    color: #333;
+    font-weight: bold; /* Emphasize the destination title */
+  }
+  
+  .continent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+  
+  .continent .icon {
+    margin-right: 0.5rem;
+    color: rgba(30, 144, 255, 0.8); /* Color to match the theme */
+  }
+  
+  .divider {
+    border: none;
+    border-top: 2px solid #ddd; /* Thicker divider for better visibility */
+    margin: 0.5rem 0; /* Reduced spacing around the divider line */
+  }
+  
+  .fees {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem; /* Added margin for separation */
+  }
+  
+  .grade {
+    font-size: 1.1rem; /* Slightly smaller font size for better balance */
+    color: #333;
+    font-variant: small-caps;
+  }
+  
+  .grade span {
+    display: block; /* Ensure each part of the grade is on its own line */
+  }
+  
+  .grade small {
+    color: #fff; /* White text for the badge */
+    background-color: rgba(30, 144, 255, 0.8); /* Match color with button background */
+    border-radius: 12px; /* Rounded badge for a modern look */
+    padding: 0.2rem 0.6rem; /* Padding for better appearance */
+    font-weight: bold;
+  }
+  
+  .price h5 {
+    font-size: 1.4rem; /* Larger font size for the price */
+    font-weight: 700; /* Bold price text */
+    color: rgba(30, 144, 255, 0.8); /* Color to match the theme */
+  }
+  
+  .desc {
+    margin-bottom: 1rem; /* Increased bottom margin for better separation */
+    color: #555;
+    font-size: 0.9rem; /* Slightly larger font size for readability */
+    line-height: 1.4; /* More readable line height */
+  }
+  
+  .btn {
+    background-color: rgba(30, 144, 255, 0.8); /* Blue button background */
+    color: white;
+    padding: 0.5rem 1rem; /* Increased padding for a more prominent button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* More space between button text and icon */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-size: 1rem; /* Adjusted font size for better readability */
+  }
+  
+  .btn:hover {
+    background-color: #155a8a; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  @media (max-width: 992px) {
+    .secContent {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .secContent {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  
+    .secTitle {
+      margin-bottom: 1rem; /* Adjusted bottom margin */
+    }
+  }
+  

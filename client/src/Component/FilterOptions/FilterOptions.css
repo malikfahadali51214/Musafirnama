@@ -1,0 +1,41 @@
+.filter-options-container {
+    display: flex;
+    justify-content: start; /* Center the buttons in the container */
+    align-items: start;
+    gap: 80px; /* Space between each button */
+    padding: 20px;
+    background-color: #f8f9fa; /* White background for container */
+    border-radius: 15px; /* Curved border radius for container */
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Wrap options in smaller screens */
+  }
+  
+  .filter-option {
+    background-color: #ffffff; /* White background inside */
+    border: 2px solid transparent; /* Transparent border by default */
+    color: #333; /* Dark text color */
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px; /* Curved border radius for buttons */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover and focus */
+  }
+  
+  .filter-option.selected {
+    border-color: rgba(30, 144, 255, 1); /* Blue border for selected */
+    background-color: #ffffff; /* Maintain white background */
+    color: rgba(30, 144, 255, 1); /* Blue text color for selected */
+    
+  }
+  
+  .filter-option:hover {
+    border-color: rgba(30, 144, 255, 0.5); /* Light blue border on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .filter-options-container {
+      flex-wrap: wrap; /* Allows buttons to wrap to a new line on small screens */
+    }
+  }
+  
